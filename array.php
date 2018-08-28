@@ -19,9 +19,9 @@ for($i=0;$i < count($members); $i++){
 echo get_number()[2];
 echo "<br />";
 numbering();
-
-echo "<li><a href=>". 'leeeee'."</a></li>";                        }
-\"?id={$epoc['id']}\"
+echo "<br />";
+echo "<li><a href=\"?id={$member['1']}\">".htmlspecialchars($member['1'])."</a></li>";                     
+// \"?id={$members['0']}\";
      ?>
     #continue를 생각해볼것
 

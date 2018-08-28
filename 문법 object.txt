@@ -1,0 +1,52 @@
+$object = new Newclass;
+echo $object ->getProperty();
+
+---------------------------------------------
+
+public $last= "lee";
+public $first= "jungmin";
+
+public function __construct($last,$first){
+	$this->first = $first;
+	$this->last = $last;
+		}
+public function fullName(){
+	return $this->first."".$this->last	
+}
+
+$users = new Users('hiii','hongkonk');
+echo $users->fullName();
+
+----------------------------------------------------------
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+----------------------------------------------------------
+while ($row = mysql_fetch_assoc($result)) {
+   echo $row["userid"];
+   echo $row["fullname"];       index 형태로 저장??
+   echo $row["userstatus"];
+}
+
+$row = $result ->fetch_assoc()[위에 꺼랑 뭐가 다른가?]
+
+------------------------------------------------
+$result = $this->connect()[이거는 return $conn]->query($sql)
+/////return value est object
+--------------------------------------------------
+$obj = new test;
+
+echo $obj->a; // 멤버변수 $a 값을 출력
+
+$tmp = $obj->aaa(); // 메쏘드 aaa() 를 실행시키고 그 값을 $tmp 에 저장
+$tmp->url = zUrl::getViewUrl($tmp->article_srl);[new랑같은거]
+
+
+---------------------
+
+class User extend Dbh{
+
+	public function getAllusers(){
+
+	$stmt = $this->connect()->query("SELECT * From users")}}
+
+[여기서 this는 Dbh해당도 된다]
